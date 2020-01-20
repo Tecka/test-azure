@@ -4,7 +4,8 @@ var server = http.createServer(function(request, response) {
 
     response.writeHead(200, { "Content-Type": "text/html" });
     //response.end("<html><body><h1>My test!</h1><br><iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=036e2b42-241d-4888-8489-071c763663fa&autoAuth=true&ctid=8b9cef57-e6fc-499a-9ff8-45c1cf0dd671&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe></body></html>");
-    response.end("<html><body><h1>My test with Karim!</h1><br>Back to normal.</body></html>");
+    response.end("<html><body><a href="app.powerbi.com/MobileRedirect.html?action=OpenReport&reportObjectId=cd97d2ca-508b-49a2-8060-ca22cfcd708d&ctid=8b9cef57-e6fc-499a-9ff8-45c1cf0dd671&OpenAppFromWindowsPCAndTablet=false&emailSource=ReportInvitation">Open PowerBI</a><br>\
+    <a href="portal.azure.com/">Open Portal</a></body></html>");
 
 });
 
